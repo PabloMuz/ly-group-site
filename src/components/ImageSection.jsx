@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroBanner = ({ title, content, image, bgImage, bgColor, flipColumn }) => {
   const columnDirection = flipColumn ? "md:flex-row-reverse" : "md:flex-row";
   const imgStyles =
@@ -11,6 +9,7 @@ const HeroBanner = ({ title, content, image, bgImage, bgColor, flipColumn }) => 
         backgroundImage: `url(${bgImage})`,
         backgroundColor: "",
         opacity: 1,
+        marginTop: "2px",
       }
     : {
         backgroundImage: `none`,
