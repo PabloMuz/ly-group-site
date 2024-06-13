@@ -5,8 +5,9 @@ import {
 
 import NavigationHeader from "./components/NavigationHeader";
 import Home from "./pages/Home";
-import {About} from "./pages/About";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
+import FooterPage from './components/FooterPage';
 
 
 /*
@@ -27,9 +28,7 @@ function App() {
         <Route path="/home" element={<Home />} />
       </Routes>
 
-      <div>
-        <i>Note app, Department of Computer Science 2024</i>
-      </div>
+     <FooterPage/>
     </Router>
   );
 }
