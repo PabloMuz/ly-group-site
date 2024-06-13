@@ -9,16 +9,16 @@ const NavigationHeader = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => { setClick(!click) };
     const content = <>
-        <div className='lg:hidden block absolute top-16 w-full left-0 right-0 bg-[#f3f2f2] transition'>
-            <ul className='text-center text-xl p-20'>
+        <div className='lg:hidden block absolute top-[100px] w-full left-0 right-0 bg-[#f3f2f2] transition'>
+            <ul className='text-center text-xl pb-10'>
                 <Link  to="/home">
-                    <li className='my-4 py-4 border-b-2 border-[#12a19e] hover:bg-slate-900 hover:rounded'>Inicio</li>
+                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Inicio</li>
                 </Link>
                 <Link to="/about">
-                    <li className='my-4 py-4 border-b-2 border-[#12a19e] hover:bg-slate-900 hover:rounded'>Nosotros</li>
+                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Nosotros</li>
                 </Link>
-                <Link to="/contact">
-                    <li className='my-4 py-4 border-b-2 border-[#12a19e] hover:bg-slate-900 hover:rounded'>Contácto</li>
+                <Link to="/concat">
+                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Contácto</li>
                 </Link>
             </ul>
         </div>
