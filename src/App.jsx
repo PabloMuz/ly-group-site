@@ -1,15 +1,19 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
 import ImageSection from "./components/ImageSection";
 import backgroundImg from "./assets/background-lines-1.png";
+import NavigationHeader from "./components/NavigationHeader";
+
+/*
+ * $targetEl: required
+ * $triggerEl: optional
+ * options: optional
+ */
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* Home - por ahora aqui */}
-      <div className="">
+      <NavigationHeader />
+      <div >
         {/* Hero banner */}
         <ImageSection
           title="L & Y GROUP CARGO"
@@ -45,13 +49,13 @@ function App() {
           bgColor="f8fafc"
           addLink={false} // True para agregar Whatsapp - por agregar
         />
-{/* CARGA MARÍTIMA */}
-<ImageSection
+        {/* CARGA MARÍTIMA */}
+        <ImageSection
           title="CARGA MARÍTIMA"
           content={
             <>
               <p>
-              Para el manejo de cargas pesadas o de volumen grande, ofrecemos el servicio de importación y exportación marítima desde/hacia cualquier puerto en el mundo. Prestando servicios en todas las modalidades:
+                Para el manejo de cargas pesadas o de volumen grande, ofrecemos el servicio de importación y exportación marítima desde/hacia cualquier puerto en el mundo. Prestando servicios en todas las modalidades:
               </p>
               <ul className="list-disc pl-5">
                 <li>Cargas LCL (Carga suelta o consolidada)</li>
@@ -66,7 +70,7 @@ function App() {
           bgColor="ffffff"
           addLink={false} // True para agregar Whatsapp - por agregar
         />
-        
+
       </div>
     </>
   );

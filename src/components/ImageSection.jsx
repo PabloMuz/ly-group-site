@@ -11,6 +11,7 @@ const HeroBanner = ({ title, content, image, bgImage, bgColor, flipColumn }) => 
         backgroundImage: `url(${bgImage})`,
         backgroundColor: "",
         opacity: 1,
+        marginTop: "2px",
       }
     : {
         backgroundImage: `none`,
