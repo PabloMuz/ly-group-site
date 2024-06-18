@@ -8,7 +8,7 @@ export default function FooterPage() {
                     {/* todo: centrar imagen */}
 
                     <img 
-                        src="src/assets/logo.png"
+                        src="src/assets/logo.webp"
                         alt="logo" 
                         width={150}
                         className="mx-auto"

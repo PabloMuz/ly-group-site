@@ -122,6 +122,7 @@ titleColor: styles.primaryColor,
 export default function Home() {
   return (
     <div>
+      <div className="">
       {sectionsData.map((section, index) => (
         <ImageSection key={index} {...section} />
       ))};
@@ -129,6 +130,7 @@ export default function Home() {
       {sectionFull.map((section, index) => (
         <FullSection key={index} {...section}/>
       ))};
+      </div>
     </div>
   );
 }

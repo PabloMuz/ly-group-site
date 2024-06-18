@@ -25,11 +25,11 @@ const NavigationHeader = () => {
     </>
 
     return (
-        <div className='z-40 bg-[#fcfcfc] w-full h-[100px] shadow   '>
+        <div className='z-40 bg-[#fcfcfc] w-full h-[100px] shadow fixed'>
 
             <div className=" flex justify-between  px-20 ">
                 <div className="mt-2">
-                    <img src="src/assets/logo.png" className="w-[80px] h-[80px]" alt="Logo" />
+                    <img src="src/assets/logo.webp" className="w-[80px] h-[80px]" alt="Logo" />
                 </div>
                 <div className=' justify-end mt-8 lg:flex md:flex lg:flex-1 hidden text-3x1 font-bold'>
                     <div >
