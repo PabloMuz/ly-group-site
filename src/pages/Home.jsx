@@ -4,10 +4,12 @@ import backgroundImg from "../assets/background-lines-1.png";
 import closeUpBusinessmanImg from "../assets/close-up-businessman-with-digital-tablet.webp";
 import airplaneSunsetImg from "../assets/airplane-sunset.webp";
 import aerialViewCargoShipImg from "../assets/aerial-view-cargo-ship-cargo-container-harbor.webp";
+import scaniaImg from "../assets/scania.webp";
+import aduanaImg from "../assets/aduana.webp";
 
 const styles = {
-  backgroundColor: "#f8fafc",
-  whiteColor: "#ffffff",
+  backgroundColor: "f8fafc",
+  whiteColor: "ffffff",
 };
 
 const sectionsData = [
@@ -47,7 +49,7 @@ const sectionsData = [
     image: airplaneSunsetImg,
     flipColumn: true,
     bgImage:"",
-    bgColor: "f8fafc",
+    bgColor: styles.backgroundColor,
     addLink: false,
   },
   {
@@ -68,10 +70,40 @@ const sectionsData = [
     ),
     image: aerialViewCargoShipImg,
     flipColumn: false,
-    bgImage: backgroundImg,
+    bgImage: "",
     bgColor: styles.whiteColor,
     addLink: false,
   },
+  {
+    title: "CARGA TERRESTRE",
+    content: (
+      <>
+        <p>
+        Ofrecemos el servicio para exportación e importación terrestre traspasando frontera con el país de Ecuador, por el sur de nuestro territorio (Ipiales) llegando a la ciudad de Tulcán. Igualmente, el transporte de carga nacional desde y hacia cualquier puerto o aeropuerto del país
+        </p>
+      </>
+    ),
+    image: scaniaImg,
+    flipColumn: true,
+    bgImage: "",
+    bgColor: styles.backgroundColor,
+    addLink: false,
+  },
+  {
+    title: "AGENCIAMIENTO ADUANERO",
+    content: (
+      <>
+        <p>
+        Coordinación de agenciamiento aduanero a través de agencia de aduana nivel 1, es decir, la nacionalización de sus mercancías está en manos de personas idóneas y expertas en tema aduanero, que están siempre actualizados en la normatividad aduanera para una correcta operación y declaración ante la DIAN.
+        </p>
+      </>
+    ),
+    image: aduanaImg,
+    flipColumn: false,
+    bgImage: "",
+    bgColor: styles.whiteColor,
+    addLink: false,
+  }
 ];
 
 export default function Home() {
