@@ -33,7 +33,7 @@ const HeroBanner = ({ title, titleCenter, content, image, bgImage, bgColor, flip
         <div className="flex flex-col w-full md:w-6/12 mb-8 md:mb-0 md:mr-6">
           <div className="max-w-lg">
             <h2 className={`text-4xl font-bold mb-4 ${titleAlignment}`}>{title}</h2>
-            <p className="text-lg mb-8">{content}</p>
+            <div className="text-lg mb-8">{content}</div>
           </div>
         </div>
 

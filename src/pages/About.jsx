@@ -1,12 +1,15 @@
 import ImageSection from "../components/ImageSection";
+import FullSection from "../components/FullSection";
 import backgroundImg from "../assets/background-lines-1.png";
 import heroContact from "../assets/diverse-businesspeople-having-meeting.jpg";
 import misionImg from "../assets/aerial-view-cargo-ship-cargo-container-harbor-2.webp";
 import visionImg from "../assets/man-with-binoculars.webp";
+import MountainBG from "../assets/MountainBG.jpg";
 
 const styles = {
   backgroundColor: "f8fafc",
   whiteColor: "ffffff",
+  primaryColor: "12a19e",
 };
 
 const sectionsData = [
@@ -62,12 +65,50 @@ const sectionsData = [
   },
 ];
 
+const sectionFull = [
+  {
+    title: "VALORES DE LA COMPAÑÍA",
+    titleCenter: false,
+    content: (
+      <>
+        <p>
+          Consideramos que nuestra razón de ser se basa en valores y principios
+          fundamentales para el desarrollo de nuestra misión y visión:
+        </p>
+        <ul className="list-disc pl-5">
+          <li>Responsabilidad</li>
+          <li>Transparencia</li>
+          <li>Honestidad</li>
+          <li>Integridad</li>
+          <li>Servicio al Cliente</li>
+          <li>Seguridad y calidad</li>
+          <li>Confiabilidad</li>
+        </ul>
+      </>
+    ),
+    titleColor: "",
+    bgImage: backgroundImg,
+  },
+  {
+    title:
+      "Siempre que piense en logística recuerde… L&Y GROUP CARGO, Más que un aliado logístico!",
+    titleCenter: true,
+    content: "",
+    titleColor: styles.primaryColor,
+    bgImage: MountainBG,
+  },
+];
+
 export default function Contact() {
   return (
     <div>
       {sectionsData.map((section, index) => (
         <ImageSection key={index} {...section} />
       ))}
+      {sectionFull.map((section, index) => (
+        <FullSection key={index} {...section} />
+      ))}
+      ;
     </div>
   );
 }

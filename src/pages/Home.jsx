@@ -1,14 +1,17 @@
 import ImageSection from "../components/ImageSection";
+import FullSection from "../components/FullSection";
 import backgroundImg from "../assets/background-lines-1.png";
 import closeUpBusinessmanImg from "../assets/close-up-businessman-with-digital-tablet.webp";
 import airplaneSunsetImg from "../assets/airplane-sunset.webp";
 import aerialViewCargoShipImg from "../assets/aerial-view-cargo-ship-cargo-container-harbor.webp";
 import scaniaImg from "../assets/scania.webp";
 import aduanaImg from "../assets/aduana.webp";
+import MountainBG from "../assets/MountainBG.jpg"
 
 const styles = {
   backgroundColor: "f8fafc",
   whiteColor: "ffffff",
+  primaryColor: "12a19e"
 };
 
 const sectionsData = [
@@ -106,12 +109,26 @@ const sectionsData = [
   }
 ];
 
+const sectionFull = [
+  {
+    title: "Siempre que piense en logística recuerde… L&Y GROUP CARGO, Más que un aliado logístico!",
+    titleCenter: true,
+    content: "",
+titleColor: styles.primaryColor, 
+    bgImage: MountainBG,
+  }
+];
+
 export default function Home() {
   return (
     <div>
       {sectionsData.map((section, index) => (
         <ImageSection key={index} {...section} />
-      ))}
+      ))};
+
+      {sectionFull.map((section, index) => (
+        <FullSection key={index} {...section}/>
+      ))};
     </div>
   );
 }
