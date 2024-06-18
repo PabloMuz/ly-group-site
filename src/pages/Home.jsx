@@ -1,4 +1,3 @@
-
 import ImageSection from "../components/ImageSection";
 import backgroundImg from "../assets/background-lines-1.png";
 import closeUpBusinessmanImg from "../assets/close-up-businessman-with-digital-tablet.webp";
@@ -15,6 +14,7 @@ const styles = {
 const sectionsData = [
   {
     title: "L & Y GROUP CARGO",
+    
     content: (
       <p>
         Somos un integrador logístico experto en procesos de comercio exterior,

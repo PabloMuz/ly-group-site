@@ -1,5 +1,6 @@
-const HeroBanner = ({ title, content, image, bgImage, bgColor, flipColumn }) => {
+const HeroBanner = ({ title, titleCenter, content, image, bgImage, bgColor, flipColumn }) => {
   const columnDirection = flipColumn ? "md:flex-row-reverse" : "md:flex-row";
+  const titleAlignment = titleCenter ? "text-center" : "text-left";
   const imgStyles =
     "object-cover object-center w-full h-full md:h-auto rounded-lg shadow-2xl";
 
@@ -31,7 +32,7 @@ const HeroBanner = ({ title, content, image, bgImage, bgColor, flipColumn }) => 
       <div className={`container mx-auto md:flex-row flex flex-col items-center justify-center gap-8 px-6 ${columnDirection}`}>
         <div className="flex flex-col w-full md:w-6/12 mb-8 md:mb-0 md:mr-6">
           <div className="max-w-lg">
-            <h2 className="text-4xl font-bold mb-4">{title}</h2>
+            <h2 className={`text-4xl font-bold mb-4 ${titleAlignment}`}>{title}</h2>
             <p className="text-lg mb-8">{content}</p>
           </div>
         </div>
