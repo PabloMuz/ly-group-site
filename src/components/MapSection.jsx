@@ -1,14 +1,11 @@
-const ImageSection = ({ title, titleCenter, content, image, bgImage, bgColor, flipColumn, heroBanner }) => {
+import React from 'react';
+
+const MapSection = ({ title, titleCenter, content, mapEmbedUrl, bgImage, bgColor, flipColumn, heroBanner }) => {
   const columnDirection = flipColumn ? "md:flex-row-reverse" : "md:flex-row";
   const titleAlignment = titleCenter ? "text-center" : "text-left";
   const heroSpacingTop = heroBanner ? "pt-40 pb-20" : "py-20";
-  const imgStyles = "object-cover object-center w-full h-full md:h-auto rounded-lg shadow-2xl";
 
-  const bgStyles = bgImage
-    ? { backgroundImage: `url(${bgImage})`, marginTop: "2px" }
-    : { backgroundColor: `#${bgColor}` };
-
-  const altText = image ? image.substring(image.lastIndexOf("/") + 1, image.lastIndexOf(".")) : "Hero Image";
+  const bgStyles = bgImage ? { backgroundImage: `url(${bgImage})` } : { backgroundColor: `#${bgColor}` };
 
   return (
     <div className={heroSpacingTop} style={bgStyles}>
@@ -20,11 +17,19 @@ const ImageSection = ({ title, titleCenter, content, image, bgImage, bgColor, fl
           </div>
         </div>
         <div className="flex items-center justify-center w-full md:w-6/12">
-          <img src={image} alt={altText} className={imgStyles} />
+          <div className="w-full h-96">
+            <iframe
+              title="Google Maps"
+              className="w-full h-full rounded-lg shadow-2xl"
+              loading="lazy"
+              allowFullScreen
+              src={mapEmbedUrl}
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default ImageSection;
+export default MapSection;

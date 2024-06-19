@@ -17,7 +17,6 @@ const styles = {
 const sectionsData = [
   {
     title: "L & Y GROUP CARGO",
-    
     content: (
       <p>
         Somos un integrador logístico experto en procesos de comercio exterior,
@@ -32,6 +31,7 @@ const sectionsData = [
     bgImage: backgroundImg,
     bgColor: styles.backgroundColor,
     addLink: false,
+    heroBanner: true, // true if you want to show the hero banner padding top
   },
   {
     title: "TRANSPORTE AÉREO",
@@ -54,6 +54,7 @@ const sectionsData = [
     bgImage:"",
     bgColor: styles.backgroundColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   },
   {
     title: "CARGA MARÍTIMA",
@@ -76,6 +77,7 @@ const sectionsData = [
     bgImage: "",
     bgColor: styles.whiteColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   },
   {
     title: "CARGA TERRESTRE",
@@ -91,6 +93,7 @@ const sectionsData = [
     bgImage: "",
     bgColor: styles.backgroundColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   },
   {
     title: "AGENCIAMIENTO ADUANERO",
@@ -106,6 +109,7 @@ const sectionsData = [
     bgImage: "",
     bgColor: styles.whiteColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   }
 ];
 

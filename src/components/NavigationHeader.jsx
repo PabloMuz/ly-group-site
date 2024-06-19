@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
+import Logo from '../assets/logo.webp';
 
 
 const NavigationHeader = () => {
@@ -25,11 +26,11 @@ const NavigationHeader = () => {
     </>
 
     return (
-        <div className='z-40 bg-[#fcfcfc] w-full h-[100px] shadow fixed'>
+        <div className='z-40 bg-[#fcfcfc] w-full h-[100px] shadow fixed -mt-1'>
 
-            <div className=" flex justify-between  px-20 ">
+            <div className=" flex justify-between px-20 py-2 ">
                 <div className="mt-2">
-                    <img src="src/assets/logo.webp" className="w-[80px] h-[80px]" alt="Logo" />
+                    <img src={Logo} className="w-[80px] h-[80px]" alt="Logo" />
                 </div>
                 <div className=' justify-end mt-8 lg:flex md:flex lg:flex-1 hidden text-3x1 font-bold'>
                     <div >

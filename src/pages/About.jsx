@@ -22,6 +22,7 @@ const sectionsData = [
     bgImage: backgroundImg,
     bgColor: styles.backgroundColor,
     addLink: false,
+    heroBanner: true, // true if you want to show the hero banner padding top
   },
   {
     title: "MISIÓN",
@@ -42,6 +43,7 @@ const sectionsData = [
     bgImage: "",
     bgColor: styles.backgroundColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   },
   {
     title: "VISIÓN",
@@ -62,6 +64,7 @@ const sectionsData = [
     bgImage: "",
     bgColor: styles.whiteColor,
     addLink: false,
+    heroBanner: false, // true if you want to show the hero banner padding top
   },
 ];
 
