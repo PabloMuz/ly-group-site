@@ -12,15 +12,15 @@ const NavigationHeader = () => {
     const content = <>
         <div className='lg:hidden block absolute top-[100px] w-full left-0 right-0 bg-[#f3f2f2] transition'>
             <ul className='text-center text-xl pb-10'>
-                <Link  to="/">
-                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Inicio</li>
-                </Link>
-                <Link to="/about">
-                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Nosotros</li>
-                </Link>
-                <Link to="/contact">
-                    <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Contácto</li>
-                </Link>
+                <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>
+                    <Link to="/" onClick={() => setClick(false)}>Inicio</Link>
+                </li>
+                <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>
+                    <Link to="/about" onClick={() => setClick(false)}>Nosotros</Link>
+                </li>
+                <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>
+                    <Link to="/contact" onClick={() => setClick(false)}>Contácto</Link>
+                </li>
             </ul>
         </div>
     </>
@@ -28,7 +28,7 @@ const NavigationHeader = () => {
     return (
         <div className='z-40 bg-[#fcfcfc] w-full h-[100px] shadow fixed -mt-1'>
 
-            <div className=" flex justify-between px-20 py-2 ">
+            <div className=" flex justify-between px-10 py-2 ">
                 <div className="mt-2">
                     <img src={Logo} className="w-[80px] h-[80px]" alt="Logo" />
                 </div>
