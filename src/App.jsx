@@ -10,13 +10,14 @@ import Contact from "./pages/Contact";
 import FooterPage from './components/FooterPage';
 import SupportIcon from './components/SupportIcon';
 import './index.css';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <NavigationHeader />
-     
       <Routes>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
