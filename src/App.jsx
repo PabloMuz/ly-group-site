@@ -8,28 +8,23 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FooterPage from './components/FooterPage';
-
-
-/*
- * $targetEl: required
- * $triggerEl: optional
- * options: optional
- */
+import SupportIcon from './components/SupportIcon';
+import './index.css';
 
 function App() {
 
   return (
     <Router>
       <NavigationHeader />
-
+     
       <Routes>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route path="" element={<Home />} />
-      </Routes>
-
-     <FooterPage/>
+      </Routes> 
+      <SupportIcon/>
+      <FooterPage />
     </Router>
   );
 }

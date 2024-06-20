@@ -12,7 +12,7 @@ const NavigationHeader = () => {
     const content = <>
         <div className='lg:hidden block absolute top-[100px] w-full left-0 right-0 bg-[#f3f2f2] transition'>
             <ul className='text-center text-xl pb-10'>
-                <Link  to="/home">
+                <Link  to="/">
                     <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Inicio</li>
                 </Link>
                 <Link to="/about">
@@ -35,7 +35,7 @@ const NavigationHeader = () => {
                 <div className=' justify-end mt-8 lg:flex md:flex lg:flex-1 hidden text-3x1 font-bold'>
                     <div >
                         <ul className='flex gap-8 mr-16 text-[18px] '>
-                            <Link to="/home">
+                            <Link to="/">
                                 <li className='hover:text-[#12a19e] hover:border-b-2 border-[#12a19e]  transition  '>Inicio</li>
                             </Link>
                             <Link to="/about">
