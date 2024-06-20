@@ -18,7 +18,7 @@ const NavigationHeader = () => {
                 <Link to="/about">
                     <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Nosotros</li>
                 </Link>
-                <Link to="/concat">
+                <Link to="/contact">
                     <li className='my-2 py-4 border-b-2 border-[#1e1f1f] hover:bg-[#12a19e] hover:rounded'>Contácto</li>
                 </Link>
             </ul>
