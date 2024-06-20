@@ -2,6 +2,7 @@ import MapSection from "../components/MapSection";
 import FullSection from "../components/FullSection";
 import backgroundImg from "../assets/background-lines-1.png";
 import MountainBG from "../assets/MountainBG.jpg";
+import whatsapp from "../assets/whatsApp_icon.webp";
 
 export default function Contact() {
   return (
@@ -18,20 +19,49 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                Celulares:{" "}
-                <a
-                  href="https://wa.me/573206555398"
-                  rel="noopener"
-                  target="_blank">
-                  313 3360087{" "}
-                </a>{" "}
-                -{" "}
-                <a
-                  href="https://wa.me/573206555398"
-                  rel="noopener"
-                  target="_blank">
-                  313 3360041{" "}
+                <div className="flex flex-row gap-4">
+                  <img
+                    src={whatsapp}
+                    alt="whatsapp"
+                    style={{ width: 30, height: 30 }}
+                  />
+                  <div>
+                    <a
+                      href="https://wa.me/573133360087"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      313 336 0087 </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </>
+        }
+        content2={
+          <>
+            <ul className="list-none pl-0 ml-0">
+              <li>
+                <a href="yalile.garcia@lygroupcargo.com">
+                  yalile.garcia@lygroupcargo.com
                 </a>
+              </li>
+              <li>
+                <div className="flex flex-row gap-4">
+                  <img
+                    src={whatsapp}
+                    alt="whatsapp"
+                    style={{ width: 30, height: 30 }}
+                  />
+                  <div>
+                    <a
+                      href="https://wa.me/573133360041"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      313 336 0041 </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </>
