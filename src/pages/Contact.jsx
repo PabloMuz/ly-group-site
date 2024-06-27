@@ -55,7 +55,7 @@ export default function Contact() {
                   />
                   <div>
                     <a
-                      href="https://wa.me/573133360041"
+                      href="https://wa.me/573206555398"
                       rel="noopener"
                       target="_blank"
                     >
