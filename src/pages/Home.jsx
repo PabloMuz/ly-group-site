@@ -7,6 +7,7 @@ import aerialViewCargoShipImg from "../assets/aerial-view-cargo-ship-cargo-conta
 import scaniaImg from "../assets/scania.webp";
 import aduanaImg from "../assets/aduana.webp";
 import MountainBG from "../assets/MountainBG.jpg"
+import AsesoriasImg from "../assets/asesorias.jpg";
 
 const styles = {
   backgroundColor: "f8fafc",
@@ -51,7 +52,7 @@ const sectionsData = [
     ),
     image: airplaneSunsetImg,
     flipColumn: true,
-    bgImage:"",
+    bgImage: "",
     bgColor: styles.backgroundColor,
     addLink: false,
     heroBanner: false, // true if you want to show the hero banner padding top
@@ -84,7 +85,7 @@ const sectionsData = [
     content: (
       <>
         <p>
-        Ofrecemos el servicio para exportación e importación terrestre traspasando frontera con el país de Ecuador, por el sur de nuestro territorio (Ipiales) llegando a la ciudad de Tulcán. Igualmente, el transporte de carga nacional desde y hacia cualquier puerto o aeropuerto del país
+          Ofrecemos el servicio para exportación e importación terrestre traspasando frontera con el país de Ecuador, por el sur de nuestro territorio (Ipiales) llegando a la ciudad de Tulcán. Igualmente, el transporte de carga nacional desde y hacia cualquier puerto o aeropuerto del país
         </p>
       </>
     ),
@@ -100,7 +101,7 @@ const sectionsData = [
     content: (
       <>
         <p>
-        Coordinación de agenciamiento aduanero a través de agencia de aduana nivel 1, es decir, la nacionalización de sus mercancías está en manos de personas idóneas y expertas en tema aduanero, que están siempre actualizados en la normatividad aduanera para una correcta operación y declaración ante la DIAN.
+          Coordinación de agenciamiento aduanero a través de agencia de aduana nivel 1, es decir, la nacionalización de sus mercancías está en manos de personas idóneas y expertas en tema aduanero, que están siempre actualizados en la normatividad aduanera para una correcta operación y declaración ante la DIAN.
         </p>
       </>
     ),
@@ -110,6 +111,26 @@ const sectionsData = [
     bgColor: styles.whiteColor,
     addLink: false,
     heroBanner: false, // true if you want to show the hero banner padding top
+  },
+  {
+    title: "Asesorías en comercio exterior.",
+    content: (
+      <>
+        <ul className="list-disc pl-5">
+          <li>Clasificación arancelaria. </li>
+          <li>Asesoría y Radicación de unidades funcionales ante la DIAN
+            Vistos Buenos y reglamentos tecnicos (RETIE, RETILAP, RETIQ, INVIMA, ICA Entre otros).</li>
+          <li>Tramites relacionados con la importación de maquinas, equipos y sistemas de producción de energías limpias, fuentes de energías no convencionales
+            Asesoría para obtención de beneficios tributarios.</li>
+        </ul>
+      </>
+    ),
+    image: AsesoriasImg,
+    flipColumn: true,
+    bgImage: "",
+    bgColor: styles.backgroundColor,
+    addLink: false,
+    heroBanner: false,
   }
 ];
 
@@ -118,7 +139,7 @@ const sectionFull = [
     title: "Siempre que piense en logística recuerde… L&Y GROUP CARGO, Más que un aliado logístico!",
     titleCenter: true,
     content: "",
-titleColor: styles.primaryColor, 
+    titleColor: styles.primaryColor,
     bgImage: MountainBG,
   }
 ];
@@ -127,13 +148,13 @@ export default function Home() {
   return (
     <div>
       <div className="">
-      {sectionsData.map((section, index) => (
-        <ImageSection key={index} {...section} />
-      ))};
+        {sectionsData.map((section, index) => (
+          <ImageSection key={index} {...section} />
+        ))};
 
-      {sectionFull.map((section, index) => (
-        <FullSection key={index} {...section}/>
-      ))};
+        {sectionFull.map((section, index) => (
+          <FullSection key={index} {...section} />
+        ))};
       </div>
     </div>
   );
