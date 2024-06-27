@@ -113,15 +113,15 @@ const sectionsData = [
     heroBanner: false, // true if you want to show the hero banner padding top
   },
   {
-    title: "Asesorías en comercio exterior.",
+    title: "ASESORÍAS EN COMERCIO EXTERIOR.",
     content: (
       <>
         <ul className="list-disc pl-5">
           <li>Clasificación arancelaria. </li>
-          <li>Asesoría y Radicación de unidades funcionales ante la DIAN
-            Vistos Buenos y reglamentos tecnicos (RETIE, RETILAP, RETIQ, INVIMA, ICA Entre otros).</li>
-          <li>Tramites relacionados con la importación de maquinas, equipos y sistemas de producción de energías limpias, fuentes de energías no convencionales
-            Asesoría para obtención de beneficios tributarios.</li>
+          <li>Asesoría y Radicación de unidades funcionales ante la DIAN.</li>
+          <li> Vistos Buenos y reglamentos tecnicos (RETIE, RETILAP, RETIQ, INVIMA, ICA Entre otros). </li>
+          <li>Tramites relacionados con la importación de maquinas, equipos y sistemas de producción de energías limpias, fuentes de energías no convencionales.</li>
+          <li>Asesoría para obtención de beneficios tributarios.</li>
         </ul>
       </>
     ),
