@@ -59,7 +59,7 @@ export default function Contact() {
                       rel="noopener"
                       target="_blank"
                     >
-                      313 336 0041 </a>
+                      320 655 5398 </a>
                   </div>
                 </div>
               </li>

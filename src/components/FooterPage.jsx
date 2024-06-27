@@ -17,7 +17,7 @@ export default function FooterPage() {
                         Correo: Gerencia@lygroupcargo.com
                     </p>
                     <p className="text-sm text-gray-500 text-center m-1">
-                        Celular: 313 3360087 - 313 3360041
+                        Celular: 313 3360087 - 320 6555398
                     </p>
                     <p className="text-sm text-gray-500 text-center m-1">
                         Calle 52a #82a - 62 Oficina 501
